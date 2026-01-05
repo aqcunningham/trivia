@@ -2,7 +2,8 @@
 
 Interactive trivia quiz built with **HTML, CSS, and JavaScript**.  
 The page lets users answer one multiple-choice question and one free-response question, with instant visual feedback based on their answers.
-![alt text](image.png)
+<img width="1908" height="1504" alt="image" src="https://github.com/user-attachments/assets/616216b7-2240-4fcf-a86b-c15e91ce59f6" />
+
 
 ---
 
