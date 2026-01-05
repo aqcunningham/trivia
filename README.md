@@ -55,6 +55,10 @@ http-server .
 # Then visit the printed URL, e.g.
 http://localhost:8080
 
+### 🌐 Live Demo
+
+**Live Demo:** https://your-render-domain-here.onrender.com
+
 Project Structure
 
 trivia/
@@ -68,35 +72,17 @@ trivia/
     ├── pic4.png
     └── pic5.png
 
-
 Implementation Details
-Multiple Choice Logic
-All answer buttons are given either a .correct or .incorrect class.
-JavaScript selects these buttons with document.querySelectorAll.
-Each button gets a click event listener:
-Correct answers:
-Button background changes to green
-Feedback <p> element updates to Correct!
-Incorrect answers:
-Button background changes to red
-Feedback <p> element updates to Incorrect
+Multiple-Choice Logic
+Each answer button has either a .correct or .incorrect class.
+JavaScript selects them using document.querySelectorAll() and attaches click listeners.
+Correct answer: button turns green, feedback shows Correct!
+Incorrect answer: button turns red, feedback shows Incorrect.
 Free-Response Logic
-The user types into an <input> field.
-On clicking the Check Answer button:
-The script reads input.value.
-If the answer matches the expected text (e.g., "Switzerland"):
-The input background turns green
-Feedback text shows Correct!
+User types into an <input> field and clicks Check Answer.
+If the answer matches the expected value ("Switzerland"):
+input background turns green
+feedback shows Correct!
 Otherwise:
-The input background turns red
-Feedback text shows Incorrect
-What I Practiced
-Creating responsive layouts using semantic HTML and CSS
-Using JavaScript event listeners (addEventListener) for interactivity
-Updating the DOM dynamically (text and styles)
-Giving instant user feedback based on their input
-Possible Improvements
-Add more questions and track the user’s score
-Randomize question order or load questions from a JSON file
-Add accessibility improvements (focus states, ARIA labels)
-Add animations or transitions when answers change state
+input turns red
+feedback shows Incorrect.
