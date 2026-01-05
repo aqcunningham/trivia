@@ -3,8 +3,10 @@
 Interactive trivia quiz built with **HTML, CSS, and JavaScript**.  
 The page lets users answer one multiple-choice question and one free-response question, with instant visual feedback based on their answers.
 <img width="1908" height="1504" alt="image" src="https://github.com/user-attachments/assets/616216b7-2240-4fcf-a86b-c15e91ce59f6" />
-
-
+<img width="1754" height="1462" alt="image" src="https://github.com/user-attachments/assets/49a9bfe4-d76b-419e-9bb2-43f4579a0f88" />
+<img width="1754" height="1510" alt="image" src="https://github.com/user-attachments/assets/fa95461b-c8e3-46e2-8887-a385e334f4ac" />
+<img width="1750" height="1528" alt="image" src="https://github.com/user-attachments/assets/b54d657f-cb17-4b41-a66a-22ee9ad3e465" />
+<img width="1724" height="620" alt="image" src="https://github.com/user-attachments/assets/ef53beb4-eb45-40de-905a-ef6cd41730a7" />
 ---
 
 ## Features
