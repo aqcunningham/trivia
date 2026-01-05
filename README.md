@@ -2,6 +2,7 @@
 
 Interactive trivia quiz built with **HTML, CSS, and JavaScript**.  
 The page lets users answer one multiple-choice question and one free-response question, with instant visual feedback based on their answers.
+
 <img width="1908" height="1504" alt="image" src="https://github.com/user-attachments/assets/616216b7-2240-4fcf-a86b-c15e91ce59f6" />
 <img width="1754" height="1462" alt="image" src="https://github.com/user-attachments/assets/49a9bfe4-d76b-419e-9bb2-43f4579a0f88" />
 <img width="1754" height="1510" alt="image" src="https://github.com/user-attachments/assets/fa95461b-c8e3-46e2-8887-a385e334f4ac" />
@@ -37,29 +38,34 @@ The page lets users answer one multiple-choice question and one free-response qu
 - *(Optional for local dev)*: `http-server` or any static file server
 
 ---
-
 ## Getting Started
 
-1. Clone the repository
+1. **Clone the repository**
 
    ```bash
    git clone https://github.com/<your-username>/trivia.git
    cd trivia
+Open the page
+The simplest option is to open index.html directly in your browser:
 
-2. Open the page
-The simplest option is to just open index.html in your browser:
 Double-click index.html, or
-Right-click → “Open With” → your preferred browser
-Optional (recommended for practice):
-Run a lightweight HTTP server from the project directory:
-# If you have http-server installed globally (Node.js)
+Right-click → Open With → your preferred browser
+(Optional) Run with a lightweight HTTP server
+If you have http-server installed globally (Node.js):
+
+```bash
 http-server .
 
-# Then visit the printed URL, e.g.
+Then visit the printed URL, for example:
+```bash
 http://localhost:8080
 
-Project Structure
+Live Demo
+```bash
+Live Demo: https://your-render-app-here.onrender.com
 
+
+Project Structure
 trivia/
 ├── index.html
 ├── style.css
@@ -71,35 +77,17 @@ trivia/
     ├── pic4.png
     └── pic5.png
 
-
 Implementation Details
-Multiple Choice Logic
-All answer buttons are given either a .correct or .incorrect class.
-JavaScript selects these buttons with document.querySelectorAll.
-Each button gets a click event listener:
-Correct answers:
-Button background changes to green
-Feedback <p> element updates to Correct!
-Incorrect answers:
-Button background changes to red
-Feedback <p> element updates to Incorrect
+Multiple-Choice Logic
+Each answer button has either a .correct or .incorrect class.
+JavaScript selects all buttons with document.querySelectorAll() and attaches click listeners.
+Correct answer: button turns green, feedback text shows Correct!.
+Incorrect answer: button turns red, feedback text shows Incorrect.
 Free-Response Logic
-The user types into an <input> field.
-On clicking the Check Answer button:
-The script reads input.value.
-If the answer matches the expected text (e.g., "Switzerland"):
-The input background turns green
-Feedback text shows Correct!
+The user types their answer into an <input> field and clicks Check Answer.
+If the answer matches the expected value (e.g. "Switzerland"):
+The input background turns green.
+Feedback text shows Correct!.
 Otherwise:
-The input background turns red
-Feedback text shows Incorrect
-What I Practiced
-Creating responsive layouts using semantic HTML and CSS
-Using JavaScript event listeners (addEventListener) for interactivity
-Updating the DOM dynamically (text and styles)
-Giving instant user feedback based on their input
-Possible Improvements
-Add more questions and track the user’s score
-Randomize question order or load questions from a JSON file
-Add accessibility improvements (focus states, ARIA labels)
-Add animations or transitions when answers change state
+The input background turns red.
+Feedback text shows Incorrect.
