@@ -45,49 +45,51 @@ The page lets users answer one multiple-choice question and one free-response qu
    ```bash
    git clone https://github.com/<your-username>/trivia.git
    cd trivia
-Open the page
-The simplest option is to open index.html directly in your browser:
+2. **Run locally (easiest way)**
+  Open index.html in your browser:
+  Double-click index.html, or
+  Right-click → Open With → choose your browser
+3. **(Optional) Run using a local HTTP server**
+  If you have http-server installed globally (Node.js):
 
-Double-click index.html, or
-Right-click → Open With → your preferred browser
-(Optional) Run with a lightweight HTTP server
-If you have http-server installed globally (Node.js):
-
-```bash
-http-server .
+    http-server .
 
 Then visit the printed URL, for example:
-```bash
-http://localhost:8080
 
-Live Demo
-```bash
-Live Demo: https://your-render-app-here.onrender.com
+    http://localhost:8080
 
+🌐 Live Demo
+Live Demo: 
+    
+    https://your-render-app-here.onrender.com
 
-Project Structure
-trivia/
-├── index.html
-├── style.css
-├── README.md
-└── screenshots/
-    ├── pic1.png
-    ├── pic2.png
-    ├── pic3.png
-    ├── pic4.png
-    └── pic5.png
+📂 Project Structure
+    
+    trivia/
+    ├── index.html
+    ├── style.css
+    ├── README.md
+    └── screenshots/
+        ├── pic1.png
+        ├── pic2.png
+        ├── pic3.png
+        ├── pic4.png
+        └── pic5.png
+    
 
-Implementation Details
-Multiple-Choice Logic
-Each answer button has either a .correct or .incorrect class.
-JavaScript selects all buttons with document.querySelectorAll() and attaches click listeners.
-Correct answer: button turns green, feedback text shows Correct!.
-Incorrect answer: button turns red, feedback text shows Incorrect.
-Free-Response Logic
-The user types their answer into an <input> field and clicks Check Answer.
-If the answer matches the expected value (e.g. "Switzerland"):
-The input background turns green.
-Feedback text shows Correct!.
-Otherwise:
-The input background turns red.
-Feedback text shows Incorrect.
+## Implementation Details
+
+### 🧩 Multiple-Choice Logic
+- Each answer button has either a `.correct` or `.incorrect` class  
+- JavaScript selects all buttons using `document.querySelectorAll()`  
+- Click listeners are attached to each button  
+- **Correct answer:** button turns **green**, shows `Correct!`  
+- **Incorrect answer:** button turns **red**, shows `Incorrect`
+
+---
+
+### ✍️ Free-Response Logic
+- User types their answer into an input field  
+- Clicking **Check Answer** compares the value  
+- **Correct:** input turns **green**, feedback shows `Correct!`  
+- **Incorrect:** input turns **red**, feedback shows `Incorrect`
